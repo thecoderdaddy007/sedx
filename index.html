@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriTrade Pro – Farm Machines & Crop Packaging for India</title>
+    <meta name="description" content="AgriTrade Pro provides modern farm machinery and durable crop packaging solutions for Indian farmers. Get reliable agri-tech from Bhopal, Madhya Pradesh.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header Styles */
+        header {
+            background: #3A923B;
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo h1 {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        .header-buttons {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .quotation-btn {
+            background: #FFD700;
+            color: #3A923B;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s;
+            border: none;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .quotation-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Banner */
+        .hero-banner {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://placehold.co/1200x800/3A923B/FFFFFF?text=Farmer+with+Rice+Transplanter+%2B+Fruit+Orchard') center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            margin-bottom: 40px;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-banner h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .hero-banner p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-primary {
+            background: #FFD700;
+            color: #3A923B;
+        }
+
+        .btn-primary:hover {
+            background: #FFC107;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 50px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #3A923B;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #666;
+            font-size: 1rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Sliders */
+        .slider-container {
+            margin-bottom: 50px;
+        }
+
+        .slider-title {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: #3A923B;
+            text-align: center;
+        }
+
+        .swiper-slide {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .swiper-slide:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            height: 200px;
+            background: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+
+        .product-content {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #3A923B;
+        }
+
+        .product-specs {
+            list-style: none;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .product-specs li {
+            padding: 2px 0;
+        }
+
+        .product-specs li:before {
+            content: "•";
+            color: #3A923B;
+            margin-right: 8px;
+        }
+
+        .crop-icons {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .crop-icon {
+            font-size: 1.2rem;
+        }
+
+        /* About Section */
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            margin-bottom: 25px;
+            font-size: 1rem;
+        }
+
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .pillar {
+            background: white;
+            padding: 25px 15px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .pillar-icon {
+            font-size: 2rem;
+            color: #3A923B;
+            margin-bottom: 15px;
+        }
+
+        /* Impact Section */
+        .impact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .impact-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #3A923B;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .testimonials {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .testimonial-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #3A923B;
+        }
+
+        /* Product Catalog */
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .catalog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .catalog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .catalog-image {
+            height: 200px;
+            background: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+
+        .catalog-content {
+            padding: 20px;
+        }
+
+        .catalog-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #3A923B;
+        }
+
+        .catalog-specs {
+            list-style: none;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .catalog-specs li {
+            padding: 3px 0;
+        }
+
+        .catalog-specs li:before {
+            content: "•";
+            color: #3A923B;
+            margin-right: 8px;
+        }
+
+        /* Blog Section */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .blog-image {
+            height: 180px;
+            background: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+
+        .blog-content {
+            padding: 20px;
+        }
+
+        .blog-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #3A923B;
+        }
+
+        .blog-preview {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-info {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: #3A923B;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background: #3A923B;
+            color: white;
+            padding: 40px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-column h3 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #FFD700;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .social-icon:hover {
+            background: #FFD700;
+            color: #3A923B;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: #e0e0e0;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: transform 0.3s;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Popup Form */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .popup-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .popup-form {
+            background: white;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            padding: 30px;
+            position: relative;
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .popup-overlay.active .popup-form {
+            transform: translateY(0);
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .popup-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #3A923B;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-banner h1 {
+                font-size: 1.7rem;
+            }
+
+            .hero-banner p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1>AgriTrade Pro</h1>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#machinery">Machinery</a></li>
+                    <li><a href="#packaging">Packaging</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <button class="quotation-btn" onclick="openPopup()">📩 Request a Quotation</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="container">
+            <h1>AgriTrade Pro</h1>
+            <p>Smart Machines. Smarter Packaging.<br>Designed for Indian Fields — Trusted by Indian Farmers.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="openPopup()">
+                    📩 Request a Quote
+                </button>
+                <a href="mailto:agritradeproofficial@gmail.com" class="btn btn-secondary">
+                    ✉ Email Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Farm Machinery Slider -->
+    <section class="container slider-container">
+        <h2 class="slider-title">Farm Machinery</h2>
+        <div class="swiper machinery-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" onclick="openPopupWithProduct('Power Weeder')">
+                    <div class="product-image">Power Weeder with Farmer</div>
+                    <div class="product-content">
+                        <h3 class="product-title">Power Weeder</h3>
+                        <ul class="product-specs">
+                            <li>5 HP Engine</li>
+                            <li>Multi-Row Capability</li>
+                        </ul>
+                        <div class="crop-icons">
+                            <span class="crop-icon">🌾</span>
+                            <span class="crop-icon">🌿</span>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;">📩 Get Quotation</button>
+                    </div>
+                </div>
+                <div class="swiper-slide" onclick="openPopupWithProduct('Rice Transplanter')">
+                    <div class="product-image">Rice Transplanter in Field</div>
+                    <div class="product-content">
+                        <h3 class="product-title">Rice Transplanter</h3>
+                        <ul class="product-specs">
+                            <li>6.5 HP Engine</li>
+                            <li>4-Row Configuration</li>
+                        </ul>
+                        <div class="crop-icons">
+                            <span class="crop-icon">🌾</span>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;">📩 Get Quotation</button>
+                    </div>
+                </div>
+                <div class="swiper-slide" onclick="openPopupWithProduct('Boom Sprayer')">
+                    <div class="product-image">Boom Sprayer in Action</div>
+                    <div class="product-content">
+                        <h3 class="product-title">Boom Sprayer</h3>
+                        <ul class="product-specs">
+                            <li>100L Tank Capacity</li>
+                            <li>12m Spray Width</li>
+                        </ul>
+                        <div class="crop-icons">
+                            <span class="crop-icon">🥦</span>
+                            <span class="crop-icon">🍅</span>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;">📩 Get Quotation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packaging Solutions Slider -->
+    <section class="container slider-container">
+        <h2 class="slider-title">Crop Packaging</h2>
+        <div class="swiper packaging-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" onclick="openPopupWithProduct('Non-Woven Bags')">
+                    <div class="product-image">Non-Woven Bags in Orchard</div>
+                    <div class="product-content">
+                        <h3 class="product-title">Non-Woven Bags (D/W/V Cut)</h3>
+                        <ul class="product-specs">
+                            <li>GSM: 80-150</li>
+                            <li>Custom Branding</li>
+                        </ul>
+                        <div class="crop-icons">
+                            <span class="crop-icon">🥭</span>
+                            <span class="crop-icon">🍎</span>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;">📩 Request Quote</button>
+                    </div>
+                </div>
+                <div class="swiper-slide" onclick="openPopupWithProduct('Paper Fruit Bags')">
+                    <div class="product-image">Paper Bags on Mangoes</div>
+                    <div class="product-content">
+                        <h3 class="product-title">Paper Fruit Bags – Mango</h3>
+                        <ul class="product-specs">
+                            <li>GSM: 70-120</li>
+                            <li>UV Resistant</li>
+                        </ul>
+                        <div class="crop-icons">
+                            <span class="crop-icon">🥭</span>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;">📩 Request Quote</button>
+                    </div>
+                </div>
+                <div class="swiper-slide" onclick="openPopupWithProduct('Leno Mesh Bags')">
+                    <div class="product-image">Leno Bags in Mandi</div>
+                    <div class="product-content">
+                        <h3 class="product-title">Leno Mesh Bags</h3>
+                        <ul class="product-specs">
+                            <li>Ventilated Mesh</li>
+                            <li>For Onion, Potato</li>
+                        </ul>
+                        <div class="crop-icons">
+                            <span class="crop-icon">🧅</span>
+                            <span class="crop-icon">🥔</span>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;">📩 Request Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="container">
+        <h2 class="section-title">Built by Engineers. Trusted by Farmers.</h2>
+        <div class="about-content">
+            <p>AgriTrade Pro is an Indian-first company built to empower Bharat's rural economy. We combine smart importing, farmer feedback, and on-ground R&D to build tools that work where it matters — the field.</p>
+            
+            <div class="pillars">
+                <div class="pillar">
+                    <div class="pillar-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Built to Last</h3>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly Packaging</h3>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon">
+                        <i class="fas fa-tractor"></i>
+                    </div>
+                    <h3>Field-Tested in India</h3>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>1-on-1 Support on WhatsApp</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="container">
+        <h2 class="section-title">Our Impact Across Bharat</h2>
+        
+        <div class="impact-content">
+            <div class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">2,100+</div>
+                        <div class="stat-label">Machines Delivered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">6.2 Lakh</div>
+                        <div class="stat-label">Crop Bags Supplied</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">₹7.4 Cr</div>
+                        <div class="stat-label">Saved by Farmers</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">11</div>
+                        <div class="stat-label">States Served</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials">
+                <div class="testimonial-item">
+                    <p class="testimonial-text">"Their fruit bags saved 40% of my mangoes."</p>
+                    <p class="testimonial-author">— Rakesh, Ratlam</p>
+                </div>
+                <div class="testimonial-item">
+                    <p class="testimonial-text">"Transplanter gave us 6 extra working days."</p>
+                    <p class="testimonial-author">— Seema, Vidisha</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Catalog - Farm Machinery -->
+    <section id="machinery" class="container">
+        <h2 class="section-title">Farm Machinery Catalog</h2>
+        
+        <div class="catalog-grid">
+            <div class="catalog-card">
+                <div class="catalog-image">Knapsack Sprayer</div>
+                <div class="catalog-content">
+                    <h3 class="catalog-title">Knapsack Sprayer</h3>
+                    <ul class="catalog-specs">
+                        <li>16L Tank Capacity</li>
+                        <li>Pressure Pump System</li>
+                        <li>For Vegetable Pests</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="openPopupWithProduct('Knapsack Sprayer')">📩 Request Quotation</button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <div class="catalog-image">Seed Cum Fertilizer Drill</div>
+                <div class="catalog-content">
+                    <h3 class="catalog-title">Seed Cum Fertilizer Drill</h3>
+                    <ul class="catalog-specs">
+                        <li>6-Row Configuration</li>
+                        <li>Adjustable Spacing</li>
+                        <li>For Wheat, Maize</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="openPopupWithProduct('Seed Cum Fertilizer Drill')">📩 Request Quotation</button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <div class="catalog-image">Mini Tiller</div>
+                <div class="catalog-content">
+                    <h3 class="catalog-title">Mini Tiller</h3>
+                    <ul class="catalog-specs">
+                        <li>5 HP Engine</li>
+                        <li>Compact Design</li>
+                        <li>For Small Holdings</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="openPopupWithProduct('Mini Tiller')">📩 Request Quotation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Catalog - Packaging -->
+    <section id="packaging" class="container">
+        <h2 class="section-title">Packaging Solutions</h2>
+        
+        <div class="catalog-grid">
+            <div class="catalog-card">
+                <div class="catalog-image">EPE Foam Nets</div>
+                <div class="catalog-content">
+                    <h3 class="catalog-title">EPE Foam Nets</h3>
+                    <ul class="catalog-specs">
+                        <li>2mm Thickness</li>
+                        <li>Cushioning Protection</li>
+                        <li>Reusable Design</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="openPopupWithProduct('EPE Foam Nets')">📩 Get Quote</button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <div class="catalog-image">PP Woven Sacks</div>
+                <div class="catalog-content">
+                    <h3 class="catalog-title">PP Woven Sacks</h3>
+                    <ul class="catalog-specs">
+                        <li>GSM: 150-250</li>
+                        <li>Laminated Options</li>
+                        <li>Moisture Resistant</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="openPopupWithProduct('PP Woven Sacks')">📩 Get Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog / Knowledge Hub -->
+    <section id="blog" class="container">
+        <h2 class="section-title">Grow Smarter with AgriTrade Pro</h2>
+        
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-image">Leno vs Non-Woven</div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Leno vs. Non-Woven – Which to Use?</h3>
+                    <p class="blog-preview">Comparing the pros and cons of different packaging materials for various crops...</p>
+                    <button class="btn btn-secondary" onclick="openPopupWithProduct('Packaging Solutions')">📩 Want this tool? Request Quote</button>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-image">Small Landholders</div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Top 3 Tools for Small Landholders</h3>
+                    <p class="blog-preview">Discover cost-effective machinery solutions for small land holdings...</p>
+                    <button class="btn btn-secondary" onclick="openPopupWithProduct('Farm Machinery')">📩 Want this tool? Request Quote</button>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-image">Export Tips</div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Export Tips: How to Protect Fruit in Transit</h3>
+                    <p class="blog-preview">Learn how proper packaging can increase your export value and reduce spoilage...</p>
+                    <button class="btn btn-secondary" onclick="openPopupWithProduct('Paper Fruit Bags')">📩 Want this tool? Request Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2 class="section-title">Talk to Us — Fast, Simple, Farmer-Friendly</h2>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Office Location</h4>
+                        <p>Bhopal, Madhya Pradesh</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p><a href="https://wa.me/917415286971" style="color: #3A923B;">+91 7415286971</a></p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:agritradeproofficial@gmail.com" style="color: #3A923B;">agritradeproofficial@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send Inquiry</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="contactName">Full Name</label>
+                        <input type="text" id="contactName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPhone">Phone Number</label>
+                        <input type="tel" id="contactPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactState">State / District</label>
+                        <input type="text" id="contactState">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactProduct">Product Type</label>
+                        <select id="contactProduct">
+                            <option value="">Select Product</option>
+                            <option value="Farm Machinery">Farm Machinery</option>
+                            <option value="Packaging Solutions">Packaging Solutions</option>
+                            <option value="Both">Both</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" placeholder="Tell us about your requirements"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">📩 Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>AgriTrade Pro</h3>
+                    <p>AgriTrade Pro delivers farmer-focused machinery and eco-smart packaging to grow India's rural future.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/917415286971" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:agritradeproofficial@gmail.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#machinery">Machinery</a></li>
+                        <li><a href="#packaging">Packaging</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Quotations are personalized. Bulk orders with branding available.</p>
+                <p>© 2025 AgriTrade Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917415286971" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Popup Quotation Form -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-form">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h2 class="popup-title">Request a Quotation</h2>
+            <form id="popupForm">
+                <div class="form-group">
+                    <label for="popupName">Full Name *</label>
+                    <input type="text" id="popupName" required>
+                </div>
+                <div class="form-group">
+                    <label for="popupPhone">Mobile Number *</label>
+                    <input type="tel" id="popupPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="popupProduct">Product</label>
+                    <select id="popupProduct">
+                        <option value="">Choose a product</option>
+                        <option value="Power Weeder">Power Weeder</option>
+                        <option value="Rice Transplanter">Rice Transplanter</option>
+                        <option value="Boom Sprayer">Boom Sprayer</option>
+                        <option value="Knapsack Sprayer">Knapsack Sprayer</option>
+                        <option value="Seed Cum Fertilizer Drill">Seed Cum Fertilizer Drill</option>
+                        <option value="Mini Tiller">Mini Tiller</option>
+                        <option value="Non-Woven Bags">Non-Woven Bags</option>
+                        <option value="Paper Fruit Bags">Paper Fruit Bags</option>
+                        <option value="Leno Mesh Bags">Leno Mesh Bags</option>
+                        <option value="EPE Foam Nets">EPE Foam Nets</option>
+                        <option value="PP Woven Sacks">PP Woven Sacks</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="popupNotes">Notes (optional)</label>
+                    <textarea id="popupNotes" placeholder="Any specific requirements?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">📩 Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+
+        // Popup Functions
+        function openPopup() {
+            document.getElementById('popupOverlay').classList.add('active');
+        }
+
+        function openPopupWithProduct(product) {
+            document.getElementById('popupOverlay').classList.add('active');
+            document.getElementById('popupProduct').value = product;
+        }
+
+        function closePopup() {
+            document.getElementById('popupOverlay').classList.remove('active');
+        }
+
+        // Close popup when clicking outside
+        document.getElementById('popupOverlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePopup();
+            }
+        });
+
+        // Popup Form Submission
+        document.getElementById('popupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('popupName').value;
+            const phone = document.getElementById('popupPhone').value;
+            const product = document.getElementById('popupProduct').value || 'Farm Machinery or Packaging';
+            const notes = document.getElementById('popupNotes').value;
+            
+            const message = `Hi AgriTrade, My name is ${name}, Phone is ${phone}, Interested in ${product}. Notes: ${notes}`;
+            const whatsappUrl = `https://wa.me/917415286971?text=${encodeURIComponent(message)}`;
+            
+            window.open(whatsappUrl, '_blank');
+            closePopup();
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('contactName').value;
+            const phone = document.getElementById('contactPhone').value;
+            const product = document.getElementById('contactProduct').value || 'Farm Machinery or Packaging';
+            
+            const message = `Hi AgriTrade, My name is ${name}, Phone is ${phone}, Interested in ${product}`;
+            const whatsappUrl = `https://wa.me/917415286971?text=${encodeURIComponent(message)}`;
+            
+            window.open(whatsappUrl, '_blank');
+        });
+
+        // Simple slider functionality (for demo purposes)
+        document.addEventListener('DOMContentLoaded', function() {
+            // In a real implementation, you would initialize Swiper.js here
+            console.log('Sliders would be initialized with Swiper.js');
+        });
+    </script>
+</body>
+</html>
+
